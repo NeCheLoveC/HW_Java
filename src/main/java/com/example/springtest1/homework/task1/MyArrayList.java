@@ -7,7 +7,7 @@ import java.util.LinkedList;
 
 public class MyArrayList<T>
 {
-    private final int START_CAPACITY = 10;
+    private static final int START_CAPACITY = 10;
     private Object[] elements;
     private int currentSize;
     private int capacity;
@@ -23,6 +23,8 @@ public class MyArrayList<T>
 
     public MyArrayList(T...srcArray)
     {
+        if(srcArray == null)
+            throw new IllegalArgumentException("Array is null");
         this.elements = new Object[srcArray.length << 1];
         this.currentSize = srcArray.length;
         this.capacity = this.elements.length;
