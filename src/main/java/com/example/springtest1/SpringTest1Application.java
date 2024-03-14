@@ -1,14 +1,14 @@
 package com.example.springtest1;
 
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
+import java.io.UnsupportedEncodingException;
+import java.util.concurrent.ExecutionException;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class SpringTest1Application {
 
-    public static void main(String[] args) {
-        ApplicationContext applicationContext = SpringApplication.run(SpringTest1Application.class, args);
+    public void main(String[] args) throws ExecutionException, InterruptedException, UnsupportedEncodingException {
+        //ApplicationContext applicationContext = SpringApplication.run(SpringTest1Application.class, args);
+
     }
 }
